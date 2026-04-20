@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Results | Menti Mentor</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body data-page="result">
+  <div class="page-shell narrow-shell">
+    <header class="site-header simple">
+      <a class="brand" href="./index.html">
+        <span class="brand-mark">MM</span>
+        <span>Menti Mentor</span>
+      </a>
+      <div class="nav-actions">
+        <a class="button ghost" href="./join.html">Join Another Room</a>
+      </div>
+    </header>
+
+    <main class="result-layout">
+      <section class="panel result-summary" id="resultLockCard">
+        <p class="eyebrow">Result access</p>
+        <h1 id="resultGateTitle">Checking result visibility...</h1>
+        <p id="resultGateMessage" class="muted-copy"></p>
+      </section>
+
+      <section class="panel result-summary hidden-block" id="resultBoard">
+        <div class="section-heading">
+          <p class="eyebrow">Performance snapshot</p>
+          <h2 id="resultQuizTitle">Quiz Results</h2>
+        </div>
+        <div class="stats-grid compact-stats" id="scoreSummary"></div>
+        <div class="leaderboard-wrap">
+          <div class="leaderboard-head">
+            <div>
+              <h3>Top 10 Leaderboard</h3>
+              <p class="muted-copy">Top 3 finishers are highlighted.</p>
+            </div>
+          </div>
+          <div id="leaderboardList" class="leaderboard-list"></div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script type="module" src="./js/quiz.js"></script>
+</body>
+</html>

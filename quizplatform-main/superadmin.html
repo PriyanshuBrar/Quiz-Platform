@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Super Admin | Menti Mentor</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body data-page="superadmin">
+  <div class="dashboard-layout single-view">
+    <main class="dashboard-content">
+      <section class="panel dashboard-hero">
+        <div>
+          <p class="eyebrow">Governance panel</p>
+          <h1>Review admin requests and manage active admins.</h1>
+        </div>
+        <div class="hero-badges">
+          <span id="superAdminIdentity">Super Admin</span>
+          <button class="button ghost" id="logoutBtn" type="button">Logout</button>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="section-heading">
+          <p class="eyebrow">Admin Requests</p>
+          <h2>Approve or reject pending admin registrations</h2>
+        </div>
+        <div id="requestStats" class="stats-grid compact-stats"></div>
+        <div id="adminRequestList" class="card-list"></div>
+      </section>
+
+      <section class="panel">
+        <div class="section-heading">
+          <p class="eyebrow">Admin Access</p>
+          <h2>Active admins</h2>
+        </div>
+        <div id="adminUserList" class="card-list"></div>
+      </section>
+    </main>
+  </div>
+
+  <script type="module" src="./js/admin.js"></script>
+</body>
+</html>

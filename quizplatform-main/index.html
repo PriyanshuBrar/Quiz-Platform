@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menti Mentor | Live Quiz Experiences</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body data-page="home">
+  <div class="page-shell">
+    <header class="site-header panel">
+      <a class="brand" href="./index.html">
+        <span class="brand-mark">MM</span>
+        <span>Menti Mentor</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#stats">Stats</a>
+        <a href="#footer">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="button ghost" href="./login.html?portal=superadmin">Super Admin Login</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero panel">
+        <div class="hero-copy">
+          <p class="eyebrow">Live sessions that actually feel alive</p>
+          <h1>Host fast, interactive quizzes with the polish of a real product.</h1>
+          <p class="hero-text">
+            Menti Mentor helps teams, teachers, and trainers create live quizzes, host rooms,
+            and reveal leaderboards at exactly the right moment.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="./login.html">Login</a>
+            <a class="button secondary" href="./signup.html?role=user">Sign up</a>
+            <a class="button ghost" href="./signup.html?role=admin">Register as Admin</a>
+          </div>
+          <div class="hero-metrics">
+            <div class="metric-pill">
+              <strong>3 roles</strong>
+              <span>User, Admin, Super Admin</span>
+            </div>
+            <div class="metric-pill">
+              <strong>10 pts</strong>
+              <span>Per question scoring</span>
+            </div>
+            <div class="metric-pill">
+              <strong>Top 10</strong>
+              <span>Leaderboard ready</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="dashboard-card floating-card">
+            <div class="card-header">
+              <span>Live Host Console</span>
+              <span class="status-dot">Live</span>
+            </div>
+            <div class="host-overview">
+              <div>
+                <small>Room Code</small>
+                <strong id="homeRoomCode">A48291</strong>
+              </div>
+              <div>
+                <small>Responses</small>
+                <strong>128</strong>
+              </div>
+              <div>
+                <small>Results</small>
+                <strong>Hidden</strong>
+              </div>
+            </div>
+            <div class="progress-list">
+              <div class="progress-row">
+                <span>Frontend Fundamentals</span>
+                <div class="progress-bar"><i style="width: 78%;"></i></div>
+              </div>
+              <div class="progress-row">
+                <span>Async JavaScript</span>
+                <div class="progress-bar"><i style="width: 61%;"></i></div>
+              </div>
+              <div class="progress-row">
+                <span>Accessibility</span>
+                <div class="progress-bar"><i style="width: 84%;"></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats-grid" id="stats">
+        <article class="stat-card panel">
+          <strong>12k+</strong>
+          <span>Responses simulated in local sessions</span>
+        </article>
+        <article class="stat-card panel">
+          <strong>60s</strong>
+          <span>Average room setup from dashboard to host</span>
+        </article>
+        <article class="stat-card panel">
+          <strong>100%</strong>
+          <span>Vanilla HTML, CSS, and JavaScript</span>
+        </article>
+      </section>
+
+      <section class="feature-section panel" id="features">
+        <div class="section-heading">
+          <p class="eyebrow">Product surface</p>
+          <h2>Everything needed for the full quiz loop</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <h3>Role-based access</h3>
+            <p>Separate experiences for participants, admins, and super admins using browser local storage.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Quiz authoring</h3>
+            <p>Create MCQ, subjective, and image-based questions with dynamic add/remove controls.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Live hosting</h3>
+            
+            <p>Generate room codes, start and end sessions, and decide when participants can see results.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Waiting room</h3>
+            <p>Participants can join by room code and wait until the host starts the quiz.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Timed experience</h3>
+            <p>One question at a time, per-question timer, and smooth navigation through the quiz.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Leaderboard reveal</h3>
+            <p>Top 10 ranking, highlighted podium entries, and results locked until the admin allows them.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer panel" id="footer">
+      <div>
+        <strong>Menti Mentor</strong>
+        <p>Interactive quiz rooms for modern classrooms, workshops, and teams.</p>
+      </div>
+      <div class="footer-links">
+        <a href="./login.html">Login</a>
+        <a href="./signup.html?role=user">Signup</a>
+        <a href="./signup.html?role=admin">Admin Register</a>
+        <a href="./login.html?portal=superadmin">Super Admin Login</a>
+        <a href="./join.html">Join Room</a>
+      </div>
+    </footer>
+  </div>
+
+  <script type="module" src="./js/app.js"></script>
+</body>
+</html>

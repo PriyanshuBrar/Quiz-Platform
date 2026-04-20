@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Menti Mentor</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body data-page="login">
+  <div class="auth-layout">
+    <section class="auth-panel panel">
+      <a class="brand auth-brand" href="./index.html">
+        <span class="brand-mark">MM</span>
+        <span>Menti Mentor</span>
+      </a>
+      <p class="eyebrow">Welcome back</p>
+      <h1 id="loginTitle">Login to your workspace</h1>
+      <p class="muted-copy" id="loginIntro">Use the password you set during registration.</p>
+
+      <div class="role-tabs" id="roleTabs">
+        <button class="role-toggle active" data-role="user" type="button">User Login</button>
+        <button class="role-toggle" data-role="admin" type="button">Admin Login</button>
+      </div>
+
+      <form id="loginForm" class="stack-form">
+        <input id="loginRole" type="hidden" value="user">
+        <label>
+          <span>Email</span>
+          <input id="loginEmail" type="email" placeholder="you@example.com" required>
+        </label>
+        <label>
+          <span>Password</span>
+          <input id="loginPassword" type="password" placeholder="Enter your password" required>
+        </label>
+        <button class="button primary" type="submit">Login</button>
+      </form>
+
+      <div class="demo-credentials">
+        <p><strong>Login flow</strong></p>
+        <p id="loginHelper">Use your registered email and password.</p>
+        <p>Admin accounts can log in only after super admin approval.</p>
+      </div>
+
+      <p id="authMessage" class="form-message"></p>
+      <div id="loginAuxLinks">
+        <p class="auth-link">Need an account? <a href="./signup.html?role=user">Create one</a></p>
+        <p class="auth-link">Need admin access? <a href="./signup.html?role=admin">Register as admin</a></p>
+        <p class="auth-link">Super admin review portal: <a href="./login.html?portal=superadmin">Open super admin login</a></p>
+      </div>
+    </section>
+  </div>
+
+  <script type="module" src="./js/auth.js"></script>
+</body>
+</html>

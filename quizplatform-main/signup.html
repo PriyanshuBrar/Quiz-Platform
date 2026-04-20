@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup | Menti Mentor</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body data-page="signup">
+  <div class="auth-layout">
+    <section class="auth-panel panel">
+      <a class="brand auth-brand" href="./index.html">
+        <span class="brand-mark">MM</span>
+        <span>Menti Mentor</span>
+      </a>
+      <p class="eyebrow" id="signupEyebrow">Create access</p>
+      <h1 id="signupTitle">Create your account</h1>
+      <p class="muted-copy" id="signupIntro">Create your account with name, email, and password.</p>
+
+      <div class="role-banner">
+        <span class="badge" id="signupRoleBadge">User</span>
+        <a class="auth-inline-link" id="signupSwitchLink" href="./signup.html?role=admin">Need admin access instead?</a>
+      </div>
+
+      <form id="signupForm" class="stack-form">
+        <label>
+          <span>Full name</span>
+          <input id="signupName" type="text" placeholder="Aarav Sharma" required>
+        </label>
+        <label>
+          <span>Email</span>
+          <input id="signupEmail" type="email" placeholder="you@example.com" required>
+        </label>
+        <label>
+          <span>Password</span>
+          <input id="signupPassword" type="password" placeholder="Create a password" required>
+        </label>
+        <button class="button primary" id="signupSubmitBtn" type="submit">Sign up</button>
+      </form>
+
+      <div class="demo-credentials">
+        <p><strong id="signupFlowSummaryTitle">Signup flow</strong></p>
+        <p>Create your account with name, email, and password.</p>
+        <p id="signupFlowSummaryBody">Create your account once, then log in directly with your email and password.</p>
+      </div>
+
+      <p id="signupMessage" class="form-message"></p>
+      <p class="auth-link">Already registered? <a href="./login.html">Go to login</a></p>
+    </section>
+  </div>
+
+  <script type="module" src="./js/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Room | Menti Mentor</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body data-page="quiz">
+  <div class="page-shell narrow-shell">
+    <header class="site-header simple">
+      <a class="brand" href="./index.html">
+        <span class="brand-mark">MM</span>
+        <span>Menti Mentor</span>
+      </a>
+      <div class="quiz-topbar">
+        <span id="quizRoomCodeBadge" class="badge neutral"></span>
+      </div>
+    </header>
+
+    <main class="quiz-layout">
+      <section class="panel quiz-stage">
+        <div class="quiz-stage-head">
+          <div>
+            <p class="eyebrow" id="quizProgress">Question 1 of 1</p>
+            <h1 id="quizQuestionTitle">Loading question...</h1>
+          </div>
+          <div class="badge neutral" id="questionTypeBadge">MCQ</div>
+        </div>
+
+        <div id="quizMedia" class="quiz-media hidden-block"></div>
+        <div id="quizAnswerArea" class="answer-area"></div>
+
+        <div class="quiz-actions">
+          <button class="button ghost" id="nextQuestionBtn" type="button">Next Question</button>
+        </div>
+        <p id="quizMessage" class="form-message"></p>
+      </section>
+    </main>
+  </div>
+
+  <script type="module" src="./js/quiz.js"></script>
+</body>
+</html>

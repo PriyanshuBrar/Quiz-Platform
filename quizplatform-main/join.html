@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join Room | Menti Mentor</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body data-page="join">
+  <div class="page-shell narrow-shell">
+    <header class="site-header simple">
+      <a class="brand" href="./index.html">
+        <span class="brand-mark">MM</span>
+        <span>Menti Mentor</span>
+      </a>
+      <div class="nav-actions">
+        <a class="button ghost" href="./index.html">Home</a>
+      </div>
+    </header>
+
+    <main class="panel join-panel">
+      <div class="section-heading">
+        <p class="eyebrow">Join a live room</p>
+        <h1>Enter your room code</h1>
+      </div>
+
+      <form id="joinForm" class="stack-form">
+        <label>
+          <span>Room code</span>
+          <input id="roomCodeInput" type="text" placeholder="Enter 6-digit code" minlength="6" maxlength="6" inputmode="numeric" pattern="[0-9]{6}" required>
+        </label>
+        <button class="button primary" type="submit">Join Room</button>
+      </form>
+
+      <p id="joinMessage" class="form-message"></p>
+
+      <section id="waitingCard" class="waiting-card hidden-block">
+        <p class="eyebrow">Waiting room</p>
+        <h2 id="waitingQuizTitle">Quiz title</h2>
+        <p id="waitingDescription" class="muted-copy"></p>
+        <div class="waiting-meta">
+          <span id="waitingStatusBadge" class="badge">Waiting for host</span>
+          <span id="waitingParticipantName" class="badge neutral"></span>
+        </div>
+        <p class="muted-copy">This screen updates automatically when the host starts the room.</p>
+        <button class="button secondary" type="button" id="leaveRoomBtn">Leave room</button>
+      </section>
+    </main>
+  </div>
+
+  <script type="module" src="./js/quiz.js"></script>
+</body>
+</html>

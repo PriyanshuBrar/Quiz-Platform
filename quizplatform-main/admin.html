@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard | Menti Mentor</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body data-page="admin">
+  <div class="dashboard-layout">
+    <aside class="dashboard-sidebar panel">
+      <a class="brand" href="./index.html">
+        <span class="brand-mark">MM</span>
+        <span>Menti Mentor</span>
+      </a>
+      <div class="sidebar-user">
+        <p class="eyebrow">Signed in as</p>
+        <h2 id="adminIdentity">Admin</h2>
+      </div>
+      <nav class="sidebar-nav">
+        <button class="tab-link active" data-tab-target="createTab" type="button">Create Quiz</button>
+        <button class="tab-link" data-tab-target="manageTab" type="button">Manage Quiz</button>
+        <button class="tab-link" data-tab-target="hostTab" type="button">Host Quiz</button>
+      </nav>
+      <div class="sidebar-actions">
+        <button class="button ghost" type="button" id="logoutBtn">Logout</button>
+      </div>
+    </aside>
+
+    <main class="dashboard-content">
+      <section class="panel dashboard-hero">
+        <div>
+          <p class="eyebrow">Admin control center</p>
+          <h1>Build, host, and reveal quizzes from one place.</h1>
+        </div>
+        <div class="hero-badges">
+          <span>MCQ</span>
+          <span>Image Upload</span>
+          <span>Live Hosting</span>
+        </div>
+      </section>
+
+      <section id="createTab" class="dashboard-tab panel active">
+        <div class="section-heading">
+          <p class="eyebrow">Quiz creation</p>
+          <h2>Compose a quiz</h2>
+        </div>
+        <form id="quizForm" class="stack-form">
+          <label>
+            <span>Quiz title</span>
+            <input id="quizTitle" type="text" placeholder="Frontend Sprint Check-in" required>
+          </label>
+
+          <div id="questionBuilder" class="question-builder"></div>
+
+          <div class="form-row">
+            <button class="button secondary" id="addQuestionBtn" type="button">Add Question</button>
+            <button class="button primary" type="submit">Save Quiz</button>
+          </div>
+        </form>
+        <p id="quizFormMessage" class="form-message"></p>
+      </section>
+
+      <section id="manageTab" class="dashboard-tab panel">
+        <div class="section-heading">
+          <p class="eyebrow">Library</p>
+          <h2>Manage created quizzes</h2>
+        </div>
+        <div id="quizManageList" class="card-list"></div>
+      </section>
+
+      <section id="hostTab" class="dashboard-tab panel">
+        <div class="section-heading">
+          <p class="eyebrow">Live host</p>
+          <h2>Start, end, and control result visibility</h2>
+        </div>
+        <div id="hostQuizList" class="card-list"></div>
+      </section>
+    </main>
+  </div>
+
+  <script type="module" src="./js/admin.js"></script>
+</body>
+</html>
